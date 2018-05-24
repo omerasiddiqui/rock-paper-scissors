@@ -108,6 +108,7 @@
     document.querySelector('.scoreComputer').innerHTML = "Computer score is: " + playerTwo;
 
 
+};
 
 restart.addEventListener("click", function(){
   resultComputer.classList.add("hide");
@@ -116,4 +117,3 @@ restart.addEventListener("click", function(){
   playerOne = 0;
   playerTwo = 0;
 });
-};

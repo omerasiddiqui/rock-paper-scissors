@@ -1,92 +1,132 @@
+$tablet: 770px;
+$mobile: 400px;
+$heading-font: 'Black Ops One', cursive;
+$body-font: 'Oswald', sans-serif;
 
-    body {
-      background: lightgrey;
-    }
+body {
+  background: lightgrey;
+}
 
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: white;
-      margin: 0 auto;
-      width: 70%;
-      border-radius: 10px;
-      height: 100%;
-    }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 10px;
+  height: 100%;
+}
 
-    .user,
-    .computer,
-    .winner {
-      margin: 10px;
-      font-family: 'Oswald', sans-serif;
-    }
+.computer,
+.user,
+.winner {
+  margin: 10px;
+  font-family: $body-font;
+}
 
-    .score {
-      display: flex;
-      font-family: 'Oswald', sans-serif;
-    }
+.score {
+  display: flex;
+  font-family: $body-font;
+}
 
-    .hide {
-      display: none;
-    }
+.hide {
+  display: none;
+}
 
-    .scoreUser,
-    .scoreComputer {
-      padding: 25px;
-      font-weight: bold;
-      font-size: 1.6rem;
-    }
+.scoreComputer,
+.scoreUser {
+  padding: 25px;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
 
-    h1 {
-      font-size: 5.5rem;
-      padding-bottom: 2px;
-      border-bottom: 3px solid lightgrey;
-      font-weight: bold;
-      font-family: 'Black Ops One', cursive;
-      text-align: center;
-      margin-bottom: 0;
-    }
+h1 {
+  font-size: 5.5rem;
+  padding-bottom: 2px;
+  border-bottom: 3px solid lightgrey;
+  font-weight: bold;
+  font-family: $heading-font;
+  text-align: center;
+  margin-bottom: 0;
+}
 
-    button {
-      margin: 10px 0;
-      padding: 10px 20px;
-      font-size: 1.4rem;
-      color: white;
-      background: green;
-      box-shadow: 2px 2px 2px grey;
-      transition: all 0.3s;
-      outline: none;
-      border-radius: 50px;
-      font-family: 'Black Ops One', cursive;
-    }
+button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  color: white;
+  background: green;
+  box-shadow: 2px 2px 2px grey;
+  transition: all 0.3s;
+  outline: none;
+  border-radius: 10px;
+  font-family: $heading-font;
+}
 
-    h2 {
-      margin: 0 auto;
-    }
+h2 {
+  margin: 0 auto;
+}
 
-    button:active {
-      box-shadow: none;
-    }
-    #scoreCard {
-      font-size: 1.3rem;
-    }
+button:active {
+  box-shadow: none;
+}
 
-    .buttons button {
-      width: 100%;
-    }
+#scoreCard {
+  font-size: 1.3rem;
+}
 
-    .buttons {
-      padding-bottom: 5%;
-    }
+.buttons button {
+  width: 100%;
+}
 
-    #resultUser, #resultComputer {
-      font-size: 9.0rem;
-      font-weight: bold;
-      text-shadow: 3px 5px 4px green;
-      padding: 0 3vw 10vh;
-      margin-top: 5%;
-      text-align: center;
-      border-radius: 50px;
-      font-family: 'Black Ops One', cursive;
-    }
+.buttons {
+  padding-bottom: 5%;
+}
+
+#resultComputer,
+#resultUser {
+  font-size: 9.0rem;
+  font-weight: bold;
+  text-shadow: 3px 5px 4px green;
+  padding: 0 3vw 10vh;
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 50px;
+  font-family: $heading-font;
+}
+@media (max-width: $tablet) {}
+@media (max-width: $mobile) {
+  h1 {
+    font-size: 3.0rem;
+  }
+
+  .wrapper {
+    width: 95%;
+    margin-top: 2%;
+  }
+
+  .buttons button {
+    width: 99%;
+  }
+
+  #scoreCard {
+    font-size: 1rem;
+  }
+
+  .scoreComputer,
+  .scoreUser {
+    font-size: 1.2rem;
+  }
+
+  .result  {
+    margin-top: 45%;
+  }
+
+  #resultComputer,
+  #resultUser {
+    font-size: 3.0rem;
+    margin-top: 15%;
+  }
+}
