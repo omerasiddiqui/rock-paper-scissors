@@ -100,6 +100,7 @@ button:active {
 @media (max-width: $mobile) {
   h1 {
     font-size: 3.0rem;
+    margin: 5px 0 0 0;
   }
 
   .wrapper {
@@ -107,8 +108,19 @@ button:active {
     margin-top: 2%;
   }
 
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .buttons button {
     width: 99%;
+  }
+
+  button {
+    padding: 10px 75px;
   }
 
   #scoreCard {
@@ -118,6 +130,8 @@ button:active {
   .scoreComputer,
   .scoreUser {
     font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
   }
 
   .result  {

@@ -438,17 +438,27 @@ button:active {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 3.0rem; }
+    font-size: 3.0rem;
+    margin: 5px 0 0 0; }
   .wrapper {
     width: 95%;
     margin-top: 2%; }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .buttons button {
     width: 99%; }
+  button {
+    padding: 10px 75px; }
   #scoreCard {
     font-size: 1rem; }
   .scoreComputer,
   .scoreUser {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 25px 10px 25px; }
   .result {
     margin-top: 45%; }
   #resultComputer,
