@@ -366,7 +366,7 @@ body {
   align-items: center;
   background: white;
   margin: 0 auto;
-  width: 70%;
+  width: 85%;
   border-radius: 10px;
   height: 100%; }
 
@@ -375,6 +375,9 @@ body {
 .winner {
   margin: 10px;
   font-family: "Oswald", sans-serif; }
+
+.user {
+  margin-top: 2%; }
 
 .score {
   display: flex;
@@ -386,6 +389,7 @@ body {
 .scoreComputer,
 .scoreUser {
   padding: 25px;
+  padding-top: 0;
   font-weight: bold;
   font-size: 1.6rem; }
 
@@ -396,7 +400,7 @@ h1 {
   font-weight: bold;
   font-family: "Black Ops One", cursive;
   text-align: center;
-  margin-bottom: 0; }
+  margin: .15em 3em 0; }
 
 button {
   margin: 10px 0;
@@ -409,12 +413,13 @@ button {
   outline: none;
   border-radius: 10px;
   font-family: "Black Ops One", cursive; }
+  button:active {
+    box-shadow: none; }
+  button:hover {
+    background: #00a900; }
 
 h2 {
   margin: 0 auto; }
-
-button:active {
-  box-shadow: none; }
 
 #scoreCard {
   font-size: 1.3rem; }
