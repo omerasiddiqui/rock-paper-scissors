@@ -72,13 +72,16 @@ function runGame() {
     const scoreCard = document.querySelector('#scoreCard');
     const resultUser = document.querySelector("#resultUser");
     const resultComputer = document.querySelector("#resultComputer");
+    const result = document.querySelector('.result');
     if (playerOne == winner) {
       scoreCard.classList.add("hide");
       resultUser.classList.remove("hide");
+      result.classList.remove("hide");
       console.log("User WINS!");
     } else if (playerTwo == winner) {
       scoreCard.classList.add("hide");
       resultComputer.classList.remove("hide");
+      result.classList.remove("hide");
       console.log("Computer WINS!");
     }
   };

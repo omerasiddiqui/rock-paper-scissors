@@ -19,6 +19,10 @@ body {
   height: 100vh;
 }
 
+.container {
+  height: 100vh;
+}
+
 .computer,
 .user,
 .winner {
@@ -141,9 +145,6 @@ h2 {
     padding: 10px 25px 10px 25px;
   }
 
-  .result  {
-    margin-top: 45%;
-  }
 
   #resultComputer,
   #resultUser {
