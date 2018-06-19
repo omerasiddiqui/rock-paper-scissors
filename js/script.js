@@ -2,6 +2,7 @@
 
 let playerOne = 0;
 let playerTwo = 0;
+const result = document.querySelector('.result');
 
 init();
 
@@ -27,7 +28,6 @@ function init() {
 
 function runGame() {
   let winner = 5;
-
   let computerChoice = Math.random() * 10;
 
   if (computerChoice <= 3.33) {
@@ -72,7 +72,6 @@ function runGame() {
     const scoreCard = document.querySelector('#scoreCard');
     const resultUser = document.querySelector("#resultUser");
     const resultComputer = document.querySelector("#resultComputer");
-    const result = document.querySelector('.result');
     if (playerOne == winner) {
       scoreCard.classList.add("hide");
       resultUser.classList.remove("hide");
@@ -124,6 +123,7 @@ restartU.addEventListener("click", function() {
   resultComputer.classList.add("hide");
   resultUser.classList.add("hide");
   scoreCard.classList.remove("hide");
+  result.classList.add("hide");
   console.log('game restarted!');
 });
 
@@ -132,5 +132,6 @@ restartC.addEventListener("click", function() {
   resultComputer.classList.add("hide");
   resultUser.classList.add("hide");
   scoreCard.classList.remove("hide");
+  result.classList.add("hide");
   console.log('game restarted!');
 });

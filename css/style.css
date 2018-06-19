@@ -350,21 +350,21 @@ summary {
 
 .wrapper {
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
   max-width: 1080px; }
 
 .border {
   border: 5px solid white; }
 
 body {
-  background: lightgrey; }
+  background: #1a1a1a; }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #c6c6c6;
   margin: 0 auto;
   width: 85%;
   border-radius: 10px;
@@ -397,20 +397,27 @@ body {
   font-size: 1.6rem; }
 
 h1 {
+  display: inline-block;
   font-size: 5.5rem;
+  width: 60%;
+  padding: 10px 5px;
   padding-bottom: 2px;
-  border-bottom: 3px solid lightgrey;
+  border-radius: 25px;
+  background: #06ae36;
+  text-shadow: 8px  8px 0.25px black;
+  border: 1px solid black;
   font-weight: bold;
   font-family: "Black Ops One", cursive;
   text-align: center;
-  margin: .15em 3em 0; }
+  margin: .15em 3em 0;
+  color: #e0e0e0; }
 
 button {
   margin: 10px 0;
   padding: 10px 20px;
   font-size: 1.4rem;
   color: white;
-  background: green;
+  background: #05952E;
   box-shadow: 2px 2px 2px grey;
   transition: all 0.3s;
   outline: none;
@@ -419,13 +426,14 @@ button {
   button:active {
     box-shadow: none; }
   button:hover {
-    background: #00a900; }
+    background: #06bc3a; }
 
 h2 {
   margin: 0 auto; }
 
 #scoreCard {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  background: #c6c6c6; }
 
 .buttons button {
   width: 100%; }
@@ -437,7 +445,7 @@ h2 {
 #resultUser {
   font-size: 9.0rem;
   font-weight: bold;
-  text-shadow: 3px 5px 4px green;
+  text-shadow: 3px 5px 4px #05952E;
   padding: 0 3vw 10vh;
   margin-top: 5%;
   text-align: center;

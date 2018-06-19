@@ -3,8 +3,10 @@ $mobile: 400px;
 $heading-font: 'Black Ops One', cursive;
 $body-font: 'Oswald', sans-serif;
 
+$primary-color: #05952E;
+
 body {
-  background: lightgrey;
+  background: lighten(black, 10);
 }
 
 .wrapper {
@@ -12,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: darken(lightgrey, 5);
   margin: 0 auto;
   width: 85%;
   border-radius: 10px;
@@ -52,13 +54,20 @@ body {
 }
 
 h1 {
+  display: inline-block;
   font-size: 5.5rem;
+  width: 60%;
+  padding: 10px 5px;
   padding-bottom: 2px;
-  border-bottom: 3px solid lightgrey;
+  border-radius: 25px;
+  background: lighten($primary-color, 5);
+  text-shadow: 8px  8px 0.25px black;
+  border: 1px solid black;
   font-weight: bold;
   font-family: $heading-font;
   text-align: center;
   margin: .15em 3em 0;
+  color: lighten(lightgrey, 5)
 }
 
 button {
@@ -66,7 +75,7 @@ button {
   padding: 10px 20px;
   font-size: 1.4rem;
   color: white;
-  background: green;
+  background: $primary-color;
   box-shadow: 2px 2px 2px grey;
   transition: all 0.3s;
   outline: none;
@@ -76,7 +85,7 @@ button {
     box-shadow: none;
   }
   &:hover {
-    background: lighten(green, 8%);
+    background: lighten($primary-color, 8%);
   }
 }
 
@@ -86,6 +95,7 @@ h2 {
 
 #scoreCard {
   font-size: 1.3rem;
+  background: darken(lightgrey, 5);
 }
 
 .buttons button {
@@ -100,7 +110,7 @@ h2 {
 #resultUser {
   font-size: 9.0rem;
   font-weight: bold;
-  text-shadow: 3px 5px 4px green;
+  text-shadow: 3px 5px 4px $primary-color;
   padding: 0 3vw 10vh;
   margin-top: 5%;
   text-align: center;
